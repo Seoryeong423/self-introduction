@@ -5,7 +5,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <title>과제1-오서령/자기소개</title>
+  <title>과제1-오서령</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,669;0,800;1,600;1,669&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
   <meta charset="utf-8">
@@ -23,6 +23,9 @@
        margin:0;
        padding:50px;
       }
+    h2{
+       text-align: center;
+    }
     * {
       font-family: 'Jua', sans-serif;
     }
@@ -33,7 +36,7 @@
        border-right:2px solid #fea407;
        list-style-type: none; 
        width:200px;
-       height:500px;
+       height:900px;
        margin:0;
        padding:20px;
        text-align: center;
@@ -45,13 +48,22 @@
     #grid ul{
         padding-left:0;
       }
-    #grid #article{
+    #grid .table{
         padding-top: 50px;
-        text-align: center;
       }
-    .page-footer {
+    .page-footer{
       border-top: 2px solid #fea407;
       background-color: #ffe2a3;
+    }
+    table,tr,td{
+      border: 7px solid #fea407;
+      border-collapse: collapse;
+    }
+    td{
+       background-color: white;
+       width: 160px;
+       height: 160px;
+       text-align: center;
     }
   </style>
 </head>
@@ -68,23 +80,49 @@
           <a class="nav-link" href="me.html">자기소개</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="greetings.html">인사말</a>
+          <a class="nav-link" href="greetings.html">인사말</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="fav.html">좋아하는 영화/드라마</a>
-      </li>
+            <a class="nav-link active" href="fav.html">좋아하는 영화/드라마</a>
+        </li>
       </ul>
     </nav>
-  <div id="article">
-  <p>  
-    <h2>인사말</h2> <br> 열심히 할테니 잘 부탁드립니다:)
-  </p>
-  </div>
-  </div>
-   <footer class="page-footer fixed-bottom">
-    <div class="footer-copyright text-center py-3">© 2020 Copyright: Seoryeong Oh
-    </div>
-   </footer>
+     <div class="table">
+        <p>
+          <h2> 좋아하는 영화/드라마 </h2>
+          <table align="center">
+            <tr>
+                <td style="vertical-align: middle;">해리포터 시리즈</td>
+                <td style="vertical-align: middle;">빅뱅이론</td>
+                <td style="vertical-align: middle;">노트북</td>
+                <td style="vertical-align: middle;"> 리틀 포레스트</td>
+            </tr>
+            <tr>
+               <td style="vertical-align: middle;">언내추럴</td>
+               <td style="vertical-align: middle;">수수하지만 굉장해! <br> 교열걸 에츠코</td>
+               <td style="vertical-align: middle;">크리미널 마인드</td>
+               <td style="vertical-align: middle;">N을 위하여</td>
+           </tr>
+           <tr>
+               <td style="vertical-align: middle;">보보경심</td>
+               <td style="vertical-align: middle;">셜록</td>
+               <td style="vertical-align: middle;">알라딘</td>
+               <td style="vertical-align: middle;">내가 널 사랑할 수 없는 10가지 이유</td>
+           </tr>
+           <tr>
+               <td style="vertical-align: middle;">비커밍 제인</td>
+               <td style="vertical-align: middle;">마이 매드 팻 <br>다이어리</td>
+               <td style="vertical-align: middle;">그 시절, <br>우리가 좋아했던 소녀</td>
+               <td style="vertical-align: middle;">겨울왕국</td>
+           </tr>
+            </table>
+         </p>
+       </div>
+      </div>
+      <footer class="page-footer fixed-bottom">
+        <div class="footer-copyright text-center py-3">© 2020 Copyright: Seoryeong Oh
+        </div>
+      </footer>
   </div>
 </body>
 </html>
