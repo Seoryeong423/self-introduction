@@ -1,0 +1,122 @@
+body{
+    margin:0;
+   }
+h1 {
+   font-size: 40px ;
+   font-family: 'Playfair Display', serif;
+   text-align: center;
+   color: #3d2808;
+   background-color:#ffe2a3;
+   border-bottom: 2px solid #fea407;
+   margin:0;
+   padding:50px;
+  }
+* {
+  font-family: 'Jua', sans-serif;
+}
+a {
+   color: #7a4e0b;
+  }
+ul{
+   border-right:2px solid #fea407;
+   list-style-type: none; 
+   width:200px;
+   height:1900px;
+   margin:0;
+   padding:20px;
+   text-align: center;
+  }
+#grid{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+  }
+#grid ul{
+    padding-left:0;
+  }
+#grid #article{
+    padding-top: 50px;
+  }
+.page-footer {
+  border-top: 2px solid #fea407;
+  background-color: #ffe2a3;
+}
+#title{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.content{
+    padding:0 10px;
+}
+img{
+    position: relative;
+    left: 25%;
+    width: 200px;
+    padding-top: 10px;
+}
+.card{
+    position: relative;
+    display: grid;
+    border: 2px dotted #fea407;
+    width: 38%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.card:hover{
+    background-color: #ffe2a3;
+}
+.date{
+    position: relative;
+    text-align: center;
+    color: #fea407;
+}
+.what{
+    position: relative;
+    text-align: center;
+}
+.text{
+    padding-top: 5px;
+    position: relative;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.dot{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fea407;
+    right: -35.5%;
+    top: 60%;
+    border-radius: 100%;
+}
+.line{
+    position: absolute;
+    width:5px;
+    background-color: #fea407;
+    top:40%;
+    left:58%;
+    margin-left:-2.5px;
+    height: 250%;
+}
+.card:nth-child(even){
+    margin-left: 60%;
+}
+.card:nth-child(even) .dot{
+    left: -29.5%;
+}
+#tothetop{
+    position:fixed;
+    right:10px;
+    bottom: 100px;
+}
+@media(max-width:1000px){
+    .dot, .line{
+        display: none;
+    }
+    .card{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .card:nth-child(even){
+        margin-left: 10%;
+    }
+}

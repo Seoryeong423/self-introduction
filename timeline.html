@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>과제1-오서령/타임라인</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,669;0,800;1,600;1,669&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <h1 id="top">🦁2020 SKKU LIKE LION🦁</h1>
+    <div id="grid">
+      <nav class="navbar">
+        <ul class="navbar-nav nav-pills ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="lion.html">홈</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="me.html">자기소개</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fav.html">좋아하는 영화/드라마</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="timeline.html">나의 대학생활 타임라인</a>
+          </li>
+        </ul>
+      </nav>
+    <div id="article">
+      <div id="title"><h3>나의 대학생활 타임라인(ღ'ᴗ'ღ)</h3>각 카드의 아이콘들을 눌러보세요!</div>
+      <div class="content">
+        <div class="card">
+          <img id="first" src="university.png" onclick="
+          document.querySelector('#first').src = 'h02.jpg';
+          ">
+          <div class="date">2016</div>
+          <div class="what">🐥입학과 새내기 생활🐥</div>
+          <div class="text">-인문과학계열로 입학! 가영문, H02 소속<br>-가영문 소모임 라온제나 활동</div>
+          <div class="dot"></div>
+        </div>
+        <div class="card">
+          <img id="second" src="group.png" onclick="
+          document.querySelector('#second').src = 'inside.jpg';
+          ">
+          <div class="date">2017</div>
+          <div class="what">🤸🏻‍♀전공 진입과 문과대 학생회🤸🏻‍♀</div>
+          <div class="text">-영어영문학과로 전공 진입 성공<br>-2학기에 심리학과 복수 전공 시작<br>-문과대 학생회 *인사이드* 로 활동</div>
+          <div class="dot"></div>
+        </div>
+        <div class="card">
+          <img id="third" src="spain.png" onclick="
+          document.querySelector('#third').src = 'spain.jpg';
+          ">
+          <div class="date">2018</div>
+          <div class="what">🛩서또문과 교환학생 라이프🛩</div>
+          <div class="text">-서령이 또 문과대 학생회... *올인*에 올인<br>-1학기 중도휴학(∗❛ัᴗ❛ั∗)<br>-2학기에 스페인으로 교환학생</div>
+          <div class="dot"></div>
+        </div>
+        <div class="card">
+          <img id="fourth" src="trip.png" onclick="
+          document.querySelector('#fourth').src = 'us.jpg';
+          ">
+          <div class="date">2019</div>
+          <div class="what">🌍여행은 즐거워🌍</div>
+          <div class="text">-1학기 휴학 후 어학연수<br>-2학기에 미국으로 교환학생</div>
+          <div class="dot"></div>
+        </div>
+        <div class="card">
+          <img id="fifth" src="lion.png" onclick="
+          document.querySelector('#fifth').src = 'birthday.jpg';
+          alert('tmi:제 생일은 4월 23일 이랍니다◟( ˘ ³˘)◞ ♡')
+          ">
+          <div class="date">2020</div>
+          <div class="what">🦁4학년과 멋사🦁</div>
+          <div class="text">-6전공과 함께 4-1 시작<br>-멋쟁이 사자처럼의 일원으로 활동 중</div>
+          <div class="dot"></div>
+        </div>
+        </div>
+    </div>
+    </div>
+     <a href="#top"><button id=tothetop>TOP</button></a>
+     <footer class="page-footer fixed-bottom">
+      <div class="footer-copyright text-center py-3">© 2020 Copyright: Seoryeong Oh
+      </div>
+     </footer>
+     <div class="line"></div>
+    </div>
+  </div>
+</body>
+</html>
