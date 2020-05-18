@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <title>과제1-오서령</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,669;0,800;1,600;1,669&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <style>
+    body{ 
+        margin:0;
+       }
+    h1 {
+       font-size: 40px ;
+       font-family: 'Playfair Display', serif;
+       text-align: center;
+       color: #3d2808;
+       background-color:#ffe2a3;
+       border-bottom: 2px solid #fea407;
+       margin:0;
+       padding:50px;
+      }
+    * {
+      font-family: 'Jua', sans-serif;
+    }
+    a {
+       color: #7a4e0b;
+      }
+    ul{
+       border-right:2px solid #fea407;
+       list-style-type: none; 
+       width:200px;
+       height:2000px;
+       margin:0;
+       padding:20px;
+       text-align: center;
+      }
+    #grid{
+        display: grid;
+        grid-template-columns: 200px 1fr;
+      }
+    #grid ul{
+        padding-left:0;
+        }
+    #grid #article{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+        grid-auto-rows: minmax(200px, auto);
+        grid-gap: 10px;
+        align-items: center;
+        padding-top: 25px;
+      }
+    img{
+        width: 100%;
+        height: stretch;
+    }
+    .page-footer{
+      border-top: 2px solid #fea407;
+      background-color: #ffe2a3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+  <h1>🦁2020 SKKU LIKE LION🦁</h1>
+  <div id="grid">
+    <nav class="navbar">
+      <ul class="navbar-nav nav-pills ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="lion.html">홈</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="me.html">자기소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="fav.html">좋아하는 영화/드라마</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="timeline.html">나의 대학생활 타임라인</a>
+        <li class="nav-item">
+          <a class="nav-link active" href="album.html">앨범</a>
+        </li>
+      </ul>
+    </nav>
+   <script>
+         password = prompt("비밀번호 4자리(생일 mmdd)를 입력하세요. \n힌트: 제 생일은 타임라인 페이지에서 찾을 수 있답니다ღ'ᴗ'ღ"); 
+        if (password == "0423") {
+          alert("WELCOME:)");
+        }else {
+          alert("비밀번호가 맞지 않습니다ㅠㅠ");
+          location="lion.html"
+        }
+   </script>
+   <div id="article">
+    <img src="h02.jpg">
+    <img src="ddddd.jpg">
+    <img src="ccccc.jpg">
+    <img src="bbbbb.jpg">
+    <img src="inside.jpg">
+    <img src="inside2.jpg">
+    <img src="aaaaa.jpg">
+    <img src="allinn.jpg">
+    <img src="allin2.jpg">
+    <img src="spain.jpg">
+    <img src="spain2.jpg">
+    <img src="spain3.jpg">   
+    <img src="mex.jpg">
+    <img src="mex2.jpg">
+    <img src="mex3.jpg">
+    <img src="us.jpg">
+    <img src="us2.jpg">
+    <img src="us3.jpg">
+   </div>
+  </div>
+  <footer class="page-footer fixed-bottom">
+      <div class="footer-copyright text-center py-3">© 2020 Copyright: Seoryeong Oh
+      </div>
+  </footer> 
+ </div>
+ </body>
+</html>
