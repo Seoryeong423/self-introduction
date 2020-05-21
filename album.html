@@ -45,7 +45,14 @@
     #grid ul{
         padding-left:0;
         }
-    #grid #article{
+    #grid #title{
+      padding-top: 10px;
+      text-align: center;
+    }
+    #grid #night{
+      text-align: center;
+    }
+    #grid .content{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, auto));
         grid-auto-rows: minmax(200px, auto);
@@ -53,9 +60,39 @@
         align-items: center;
         padding-top: 25px;
       }
-    img{
-        width: 100%;
-        height: stretch;
+    .content .image{
+        position: relative;
+    }
+    .content .pic {
+      border: 2px solid #fea407;
+      width: 100%;
+      height: stretch;
+    }
+    .content .middle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: #fea407;
+    }
+    .image:hover .middle{
+      opacity: 1;
+    }
+    .content .text {
+      color: white;
+      font-size: 15px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
     }
     .page-footer{
       border-top: 2px solid #fea407;
@@ -95,25 +132,107 @@
         }
    </script>
    <div id="article">
-    <img src="h02.jpg">
-    <img src="ddddd.jpg">
-    <img src="ccccc.jpg">
-    <img src="bbbbb.jpg">
-    <img src="inside.jpg">
-    <img src="inside2.jpg">
-    <img src="aaaaa.jpg">
-    <img src="allinn.jpg">
-    <img src="allin2.jpg">
-    <img src="spain.jpg">
-    <img src="spain2.jpg">
-    <img src="spain3.jpg">   
-    <img src="mex.jpg">
-    <img src="mex2.jpg">
-    <img src="mex3.jpg">
-    <img src="us.jpg">
-    <img src="us2.jpg">
-    <img src="us3.jpg">
+   <div id="title"><h3>Album</h3></div>
+   <div id="night">
+   <input id="dayNight" type="button" value="Night" onclick="
+   if(document.querySelector('#dayNight').value === 'Night'){
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('#article').style.color = 'white';
+    document.querySelector('#dayNight').value = 'Day';
+      } else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('#article').style.color = 'black';
+    document.querySelector('#dayNight').value = 'Night';
+   }
+  "></div>
+   <div class= "content">
+    <div class="image">
+    <img src="h02.jpg" class="pic">
+    <div class="middle">
+    <div class="text">H02 엘잠</div>
+    </div></div>
+    <div class="image">
+    <img src="ddddd.jpg" class="pic">
+    <div class="middle">
+    <div class="text">H02 하튜</div>
+    </div></div>
+    <div class="image">
+    <img src="ccccc.jpg" class="pic">
+    <div class="middle">
+    <div class="text">라온제나 공연</div>
+    </div></div>
+    <div class="image">
+    <img src="bbbbb.jpg" class="pic">
+    <div class="middle">
+    <div class="text">인사이드 체육대회</div>
+    </div></div>
+    <div class="image">
+    <img src="inside.jpg" class="pic">
+    <div class="middle">
+    <div class="text">인사이드 문과대 축제</div>
+    </div></div>
+    <div class="image">
+    <img src="inside2.jpg" class="pic">
+    <div class="middle">
+    <div class="text">인사이드 셀카</div>
+    </div></div>
+    <div class="image">
+    <img src="aaaaa.jpg" class="pic">
+    <div class="middle">
+    <div class="text">올인 셀카</div>
+    </div></div>
+    <div class="image">
+    <img src="allinn.jpg" class="pic">
+    <div class="middle">
+    <div class="text">올인 체육대회</div>
+    </div></div>
+    <div class="image">
+    <img src="allin2.jpg" class="pic">
+    <div class="middle">
+    <div class="text">올인 체육대회 뒷풀이</div>
+    </div></div>
+    <div class="image">
+    <img src="spain.jpg" class="pic">
+    <div class="middle">
+    <div class="text">스페인 비토리아</div>
+    </div></div>
+    <div class="image">
+    <img src="spain2.jpg" class="pic">
+    <div class="middle">
+    <div class="text">스페인 산세바스티안</div>
+    </div></div>
+    <div class="image">
+    <img src="spain3.jpg" class="pic">
+    <div class="middle">
+    <div class="text">츄로스</div>
+    </div></div>
+    <div class="image">
+    <img src="mex.jpg" class="pic">
+    <div class="middle">
+    <div class="text">멕시코시티</div>
+    </div></div>
+    <div class="image">
+    <img src="mex2.jpg" class="pic">
+    <div class="middle">
+    <div class="text">멕시코 예술궁전</div>
+    </div></div>
+    <div class="image">
+    <img src="mex3.jpg" class="pic">
+    <div class="middle">
+    <div class="text">멕시코 어학당</div>
+    </div></div>
+    <div class="image">
+    <img src="us.jpg" class="pic">
+    <div class="middle">
+    <div class="text">미국 텍사스</div>
+    </div></div>
+    <div class="image">
+    <img src="us2.jpg" class="pic">
+    <div class="middle">
+    <div class="text">미국 텍사스</div>
+    </div></div>
    </div>
+  </div>
   </div>
   <footer class="page-footer fixed-bottom">
       <div class="footer-copyright text-center py-3">© 2020 Copyright: Seoryeong Oh
