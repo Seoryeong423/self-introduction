@@ -1,0 +1,38 @@
+body{
+    margin-top: 0px;
+}
+#grid .content{
+    width: 50%;
+    height: 30%;
+    position: absloute;
+    left: 70%;
+    top: 50%;
+    text-align: center;
+}
+.content .window{
+    height:100%;
+    width: 80%;
+    border: 3px solid #fea407;
+    margin-left: 320px;
+    background-color: #ffe2a3;
+}
+#w_stopwatch{
+    display: none;
+}
+input[type=number]{
+    width: 50px;
+}
+.content h2{
+    font-size: 80px;
+    margin: 10px 0px -5px 0px;
+    text-shadow: 2px 2px white;
+}
+.content h3{
+    margin: 10px 0px 0px 0px;   
+}
+.content .select{
+    position: relative;
+    left: 53%;
+    bottom: 10%;
+    text-align: center;
+}
