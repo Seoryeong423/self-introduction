@@ -6,10 +6,8 @@ const w_stopwatch = document.querySelector('#w_stopwatch');
 selectClock.onclick = function(){
     w_clock.style.display = 'block';
     w_stopwatch.style.display = 'none';
-    w_timer.style.display = 'none';
 }
 selectStopwatch.onclick = function(){
     w_clock.style.display = 'none';
     w_stopwatch.style.display = 'block';
-    w_timer.style.display = 'none';
 }
